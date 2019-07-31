@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Grid system: A simple and easy to learn grid system, that is adaptable to all screens">
+    <title>Grid system • A responsive and lightweight CSS framework</title>
+    <link rel="stylesheet" href="socialiteui-v0.4.4/socialiteui.min.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="prettifier.css">
+    
+
+<style>
+    code{
+        font-size: 1.1rem;
+    }
+    pre.prettyprint.lang-html{
+        display: block;
+        width: 100%;
+        overflow-y: auto;
+    }
+</style>
+
+<style>
+    .example.grid>.col,
+    .example.grid>*[class*='col-'] {
+        background: #ff7675;
+        color: white;
+        border: 1px solid white;
+    }
+</style>
+
+</head>
+<body>
+  
+  
+
+    <aside id="documentation" class="sidebar">
+
+        <p class="text-center">
+            v0.4.4
+        </p>
+
+        <hr>
+
+        <a class="link">Components</a>
+
+        <div class="children active">
+            <a href="card.html" class="link text-size-s ">Card</a>
+            <a href="comment.html" class="link text-size-s ">Comment</a>
+            <a href="sidebar.html" class="link text-size-s ">Sidebar</a>
+            <a href="navbar.html" class="link text-size-s ">Navbar</a>
+            <a href="staggered.html" class="link text-size-s ">Staggered grid view</a>
+        </div>
+
+        <!-- <a class="link">Elements</a> -->
+
+        <!-- <div class="children active">
+            <a class="link text-size-s">Button</a>
+            <a class="link text-size-s">Circle image</a>
+        </div> -->
+
+        
+
+        <a href="grid-system.html" class="link text-brand">Grid system</a>
+
+        <!-- <div class="children active">
+            <a class="link text-size-s">Basic usage</a>
+            <a class="link text-size-s">Responsiveness</a>
+        </div> -->
+
+        <!-- <a class="link">Layout</a> -->
+
+        
+
+    </aside>
+
+    <div class="sidebar-content">
+        <nav class="navbar with-sidebar">
+
+            <span class="burger-btn arrow-left" data-sidebar="documentation">
+                <span class="burger-icon"></span>
+            </span>
+        
+            <a href="index.html" class="link text-size-6">SocialiteUI</a>
+        
+            <div class="navbar-content">
+                <div class="navbar-end">
+                    <a target="_blank" rel="noopener noreferrer" class="link" href="https://github.com/Isradeleon/socialiteui"><i class="fab fa-github"></i></a>
+                    <a class="link text-brand" href="https://github.com/Isradeleon/socialiteui/archive/0.4.4.zip"><i style="font-size: 1.2rem;" class="fa fa-cloud-download-alt"></i></a>
+                </div>
+            </div>
+        
+        </nav>
+              
+        <div class="container below-navbar">
+            <br>
+            
+<!-- GRID SYSTEM -->
+<h1 id="card" class="text-brand">Grid system</h1>
+
+<p>A grid system designed for being simple, legible and easy to learn.</p>
+
+<div class="grid example">
+    <div class="col-12">col-12</div>
+
+    <div class="col-11">col-11</div>
+    <div class="col-1">col-1</div>
+
+    <div class="col-10">col-10</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+
+    <div class="col-9">col-9</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+
+    <div class="col-8">col-8</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+
+    <div class="col-7">col-7</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+
+    <div class="col-6">col-6</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+
+    <div class="col-5">col-5</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+
+    <div class="col-4">col-4</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+
+    <div class="col-3">col-3</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+
+    <div class="col-2">col-2</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+    <div class="col-1">col-1</div>
+</div>
+
+<br>
+
+<h2>Basic usage</h2>
+
+<p>You just need to add the <code>grid</code> class to your columns container. 
+This is a <b>12 column system</b>, so you may use the <code>col-*</code> syntax for 
+the column span for each element.</p>
+<pre class="prettyprint lang-html">
+<div class="grid">
+
+    <div class="col-6">
+        <!-- Your content -->
+    </div>
+
+    <div class="col-6">
+        <!-- Your content -->
+    </div>
+
+</div>
+</pre>
+
+<br>
+
+<p>If you only want same width columns, you can use the <code>col</code> class for each element.</p>
+<div class="grid example">
+    <div class="col">
+        col
+    </div>
+    <div class="col">
+        col
+    </div>
+    <div class="col">
+        col
+    </div>
+</div>
+
+<pre class="prettyprint lang-html">
+<div class="grid">
+
+    <div class="col">
+        ...
+    </div>
+
+    <div class="col">
+        ...
+    </div>
+
+    <div class="col">
+        ...
+    </div>
+
+</div>
+</pre>
+
+        </div>
+    </div>
+
+
+
+  <script>
+    document.querySelectorAll("pre.prettyprint").forEach(function(element) {
+        element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+  
+<script src="socialiteui-v0.4.4/socialiteui.min.js"></script>
+
+</body>
+</html>
