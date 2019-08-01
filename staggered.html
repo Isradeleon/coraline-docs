@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Staggered grid view: A responsive, left to right staggered grid built with Javascript">
+    <meta name="description" content="Staggered grid view: A responsive, left to right staggered grid built with CSS and JS">
     <title>Staggered grid • A responsive and lightweight CSS framework</title>
     <link rel="stylesheet" href="socialiteui-v0.4.5/socialiteui.min.css">
     <link rel="icon" href="logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="prettifier.css">
 
-    <meta property="og:url" content="https://socialiteui.com">
+    <link rel="canonical" href="https://socialiteui.com/staggered.html">
+
+    <meta property="og:url" content="https://socialiteui.com/staggered.html">
     <meta property="og:type" content="website">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
 
     <meta property="og:title" content="Staggered grid • A responsive and lightweight CSS framework">
-    <meta property="og:description" content="Staggered grid view: A responsive, left to right staggered grid built with Javascript">
+    <meta property="og:description" content="Staggered grid view: A responsive, left to right staggered grid built with CSS and JS">
     <meta property="og:image" content="https://socialiteui.com/logo.png">
 
     <meta name="twitter:card" content="summary_large_image">
@@ -26,7 +28,7 @@
     <meta name="twitter:creator" content="@isradeleon">
 
     <meta name="twitter:title" content="Staggered grid • A responsive and lightweight CSS framework">
-    <meta name="twitter:description" content="Staggered grid view: A responsive, left to right staggered grid built with Javascript">
+    <meta name="twitter:description" content="Staggered grid view: A responsive, left to right staggered grid built with CSS and JS">
     <meta name="twitter:image" content="https://socialiteui.com/logo.png">
 
     
@@ -215,13 +217,16 @@
 </div>
 
 <p>For the staggered grid to work, you'll need to import the javascript 
-file <code class="text-brand">socialiteui-v0.4.5/socialiteui.min.js</code> from socialiteui framework at the bottom of your html document.</p>
+file <code class="text-brand">socialiteui-v0.4.5/socialiteui.min.js</code> from socialiteui framework 
+to the bottom of your html document. The script makes the calculation for the negative margin-top 
+for each element, making it look staggered. It also listens for resize window events and when new 
+elements are added to the staggered grid using a mutation observer.</p>
 
-<p>Then just add the <code>staggered</code> class to your element.</p>
+<p>All you need to do is adding the <code>staggered</code> class to your element. Every item you want to place inside the
+staggered grid, must be surrounded by an html element with the <code>staggered-item</code> class.</p>
 <pre class="prettyprint lang-html">
 <div class="staggered">
 
-    <!-- Every item must be inside a tag with the staggered-item class -->
     <div class="staggered-item">
         ...
     </div>
@@ -236,9 +241,11 @@ file <code class="text-brand">socialiteui-v0.4.5/socialiteui.min.js</code> from 
 <br>
 
 <p>In desktop, the staggered grid will be 4 columns length by default. 
-Use the classes <code>two</code> or <code>three</code> for 2 or 3 columns.</p>
+To overwrite this behavior, use the classes <code>two</code> or <code>three</code> 
+for two or three columns.</p>
 <pre class="prettyprint lang-html">
-<div class="staggered two"><!-- Two columns length -->
+<!-- Two columns length -->
+<div class="staggered two">
     ...
 </div>
 </pre>
@@ -250,7 +257,7 @@ Use the classes <code>mobile-two</code> or <code>mobile-three</code> for 2 or 3 
 The tablet will respect the desktop columns, but you may use <code>tablet-two</code> or <code>tablet-three</code> 
 to specify a different column length if need it.</p>
 <pre class="prettyprint lang-html">
-<!-- Two columns on mobile, three on tablet and 4 on desktop -->
+<!-- Two columns on mobile, three on tablet and four on desktop -->
 <div class="staggered mobile-two tablet-three">
     ...
 </div>
