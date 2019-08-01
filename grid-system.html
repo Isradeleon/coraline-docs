@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Grid system: A simple and easy to learn grid system, that is adaptable to all screens">
     <title>Grid system • A responsive and lightweight CSS framework</title>
-    <link rel="stylesheet" href="socialiteui-v0.4.4/socialiteui.min.css">
+    <link rel="stylesheet" href="socialiteui-v0.4.5/socialiteui.min.css">
     <link rel="icon" href="logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="prettifier.css">
@@ -59,7 +59,7 @@
     <aside id="documentation" class="sidebar">
 
         <p class="text-center">
-            v0.4.4
+            v0.4.5
         </p>
 
         <hr>
@@ -108,7 +108,7 @@
             <div class="navbar-content">
                 <div class="navbar-end">
                     <a target="_blank" rel="noopener noreferrer" class="link" href="https://github.com/Isradeleon/socialiteui"><i class="fab fa-github"></i></a>
-                    <a class="link text-brand" href="https://github.com/Isradeleon/socialiteui/archive/0.4.4.zip"><i style="font-size: 1.2rem;" class="fa fa-cloud-download-alt"></i></a>
+                    <a class="link text-brand" href="https://github.com/Isradeleon/socialiteui/archive/0.4.5.zip"><i style="font-size: 1.2rem;" class="fa fa-cloud-download-alt"></i></a>
                 </div>
             </div>
         
@@ -255,6 +255,76 @@ the column span for each element.</p>
 </div>
 </pre>
 
+<br>
+
+<h2>Responsiveness</h2>
+
+<p>For defining a diferent a different column span for mobile and tablet, just use the 
+<code>mobile-*</code> and <code>tablet-*</code> syntax with the same 12 column system.</p>
+
+<div class="example grid text-white">
+    <div class="col-4 tablet-12 mobile-6">
+        <p>col-4, tablet-12, mobile-6</p>
+    </div>
+    <div class="col-4 tablet-12 mobile-6">
+        <p>col-4, tablet-12, mobile-6</p>
+    </div>                
+    <div class="col-4 tablet-12 mobile-12">
+        <p>col-4, tablet-12, mobile-12</p>
+    </div>                
+</div>
+<pre class="prettyprint lang-html">
+<div class="grid">
+
+    <div class="col-4 tablet-12 mobile-6">
+        ...
+    </div>
+    
+    <div class="col-4 tablet-12 mobile-6">
+        ...
+    </div>                
+    
+    <div class="col-4 tablet-12 mobile-12">
+        ...
+    </div>
+    
+</div>
+</pre>
+
+<br>
+
+<p>If you don't set the tablet column span, it will respect the desktop columns. 
+On the other hand, mobile will override them to fill the 100% width of the grid.</p>
+
+<br>
+
+<p>For large screen devices is the same, you just need to use the <code>large-*</code> syntax 
+with the 12 column system. If you don't set these values, the columns you set with the <code>col-*</code> 
+syntax will stay the same.</p>
+
+<div class="example grid text-white">
+    <div class="col-12 large-6">
+        <p>col-12, large-6</p>
+    </div>
+    <div class="col-12 large-6">
+        <p>col-12, large-6</p>
+    </div>
+</div>
+<pre class="prettyprint lang-html">
+<div class="grid">
+    
+    <div class="col-12 large-6">
+        ...
+    </div>
+
+    <div class="col-12 large-6">
+        ...
+    </div>
+
+</div>
+</pre>
+
+
         </div>
     </div>
 
@@ -268,7 +338,7 @@ the column span for each element.</p>
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
   
-<script src="socialiteui-v0.4.4/socialiteui.min.js"></script>
+<script src="socialiteui-v0.4.5/socialiteui.min.js"></script>
 
 </body>
 </html>
