@@ -1,0 +1,181 @@
+{% extends "docs.njk.html" %}
+
+{% block content %}
+<!-- TAGS -->
+<h1 class="text-brand">Tags</h1>
+
+<p>A small, nice element with multiple ways to customize through CSS classes.</p>
+
+<div class="tags">
+    <span class="radius">Default</span>
+    <span class="radius dark">Dark</span>
+    <span class="radius brand">Brand</span>
+    <span class="radius primary">Primary</span>
+    <span class="radius secondary">Secondary</span>
+    <span class="radius info">Info</span>
+    <span class="radius success">Success</span>
+    <span class="radius warning">Warning</span>
+    <span class="radius danger">Danger</span>
+</div>
+
+<br>
+
+<p>Just add the <code>tags</code> class to your html element, and add a span 
+for each tag that you want to add:</p>
+
+<pre class="prettyprint lang-html">
+<div class="tags">
+    <span class="radius">Default</span>
+    <span class="radius dark">Dark</span>
+    <span class="radius brand">Brand</span>
+    <span class="radius primary">Primary</span>
+    <span class="radius secondary">Secondary</span>
+    <span class="radius info">Info</span>
+    <span class="radius success">Success</span>
+    <span class="radius warning">Warning</span>
+    <span class="radius danger">Danger</span>
+</div>
+</pre>
+
+<br>
+
+<p>If you only want a single tag, add the <code>tag</code> class:</p>
+<div>
+    <span class="tag radius">Single tag</span>
+</div>
+<pre class="prettyprint lang-html">
+<span class="tag radius">Single tag</span>
+</pre>
+
+<br>
+
+<p>As you can see, in the example above, the <code>radius</code> 
+class helper is implemented. This is because by default the tags 
+have no border-radius as below:</p>
+
+<div class="tags">
+    <span>Default</span>
+    <span class="dark">Dark</span>
+    <span class="brand">Brand</span>
+    <span class="primary">Primary</span>
+    <span class="secondary">Secondary</span>
+    <span class="info">Info</span>
+    <span class="success">Success</span>
+    <span class="warning">Warning</span>
+    <span class="danger">Danger</span>
+</div>
+
+<pre class="prettyprint lang-html">
+<div class="tags">
+    <span>Default</span>
+    <span class="dark">Dark</span>
+    <span class="brand">Brand</span>
+    <span class="primary">Primary</span>
+    <span class="secondary">Secondary</span>
+    <span class="info">Info</span>
+    <span class="success">Success</span>
+    <span class="warning">Warning</span>
+    <span class="danger">Danger</span>
+</div>
+</pre>
+
+<br>
+
+<p>If you want rounded tags, just add the <code>rounded</code> class:</p>
+<div class="tags">
+    <span class="rounded">Default</span>
+    <span class="rounded dark">Dark</span>
+    <span class="rounded brand">Brand</span>
+    <span class="rounded primary">Primary</span>
+    <span class="rounded secondary">Secondary</span>
+    <span class="rounded info">Info</span>
+    <span class="rounded success">Success</span>
+    <span class="rounded warning">Warning</span>
+    <span class="rounded danger">Danger</span>
+</div>
+
+<pre class="prettyprint lang-html">
+<div class="tags">
+    <span class="rounded">Default</span>
+    <span class="rounded dark">Dark</span>
+    <span class="rounded brand">Brand</span>
+    <span class="rounded primary">Primary</span>
+    <span class="rounded secondary">Secondary</span>
+    <span class="rounded info">Info</span>
+    <span class="rounded success">Success</span>
+    <span class="rounded warning">Warning</span>
+    <span class="rounded danger">Danger</span>
+</div>
+</pre>
+
+<br>
+
+<p>You may also implement the <code>box-shadow-*</code> helper if you want:</p>
+<div class="tags">
+    <span class="rounded box-shadow-3">Default</span>
+    <span class="rounded box-shadow-3 dark">Dark</span>
+    <span class="rounded box-shadow-3 brand">Brand</span>
+    <span class="rounded box-shadow-3 primary">Primary</span>
+    <span class="rounded box-shadow-3 secondary">Secondary</span>
+    <span class="rounded box-shadow-3 info">Info</span>
+    <span class="rounded box-shadow-3 success">Success</span>
+    <span class="rounded box-shadow-3 warning">Warning</span>
+    <span class="rounded box-shadow-3 danger">Danger</span>
+</div>
+
+<pre class="prettyprint lang-html">
+<div class="tags">
+    <span class="rounded box-shadow-3">Default</span>
+    <span class="rounded box-shadow-3 dark">Dark</span>
+    <span class="rounded box-shadow-3 brand">Brand</span>
+    <span class="rounded box-shadow-3 primary">Primary</span>
+    <span class="rounded box-shadow-3 secondary">Secondary</span>
+    <span class="rounded box-shadow-3 info">Info</span>
+    <span class="rounded box-shadow-3 success">Success</span>
+    <span class="rounded box-shadow-3 warning">Warning</span>
+    <span class="rounded box-shadow-3 danger">Danger</span>
+</div>
+</pre>
+
+<br>
+
+<h2>Small tags</h2>
+<p>The tag element also comes in a small version. Just add the <code>small</code>
+class to get the following result:</p>
+<div class="tags">
+    <span class="small radius">Default</span>
+    <span class="small radius dark">Dark</span>
+    <span class="small radius brand">Brand</span>
+    <span class="small radius primary">Primary</span>
+    <span class="small radius secondary">Secondary</span>
+    <span class="small radius info">Info</span>
+    <span class="small radius success">Success</span>
+    <span class="small radius warning">Warning</span>
+    <span class="small radius danger">Danger</span>
+</div>
+
+<pre class="prettyprint lang-html">
+<div class="tags">
+    <span class="small radius">Default</span>
+    <span class="small radius dark">Dark</span>
+    <span class="small radius brand">Brand</span>
+    <span class="small radius primary">Primary</span>
+    <span class="small radius secondary">Secondary</span>
+    <span class="small radius info">Info</span>
+    <span class="small radius success">Success</span>
+    <span class="small radius warning">Warning</span>
+    <span class="small radius danger">Danger</span>
+</div>
+</pre>
+
+<br>
+
+<p>And for a single small tag:</p>
+<div>
+    <span class="tag small radius brand">Small tag</span>
+</div>
+<pre class="prettyprint lang-html">
+<span class="tag small radius brand">Small tag</span>
+</pre>
+
+{% endblock %}
