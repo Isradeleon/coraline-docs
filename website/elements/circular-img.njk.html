@@ -1,0 +1,126 @@
+{% extends "docs.njk.html" %}
+
+{% block content %}
+<!-- CIRCULAR IMG -->
+<h1 class="text-brand">Circular img</h1>
+
+<p>Useful element for showing circular images.</p>
+
+<div>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=1)" class="circular-img large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=2)" class="circular-img large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=3)" class="circular-img large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=4)" class="circular-img large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=5)" class="circular-img large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=6)" class="circular-img large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=7)" class="circular-img large"></span>
+    <!-- <span class="circular-img profile" style="background-image: url(https://picsum.photos/100/100)"></span>
+    <span class="circular-img x-large" style="background-image: url(https://picsum.photos/100/100)"></span>
+    <span class="circular-img small" style="background-image: url(https://picsum.photos/100/100)"></span> -->
+</div>
+
+<br>
+
+<p>An html element is used for the circular shape. You just need to add the 
+<code>circular-img</code> class to your element, and set the background-image 
+CSS property through your own class or with inline styles:</p>
+
+<pre class="prettyprint lang-html">
+
+<span class="circular-img large" style="background-image: url(https://loremflickr.com/320/240)"></span>
+
+</pre>
+
+<br>
+
+<p>As you can see, the example above shows the large version of the circular-img 
+element. The default size for this element is the following:</p>
+
+<div>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=1)" class="circular-img"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=2)" class="circular-img"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=3)" class="circular-img"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=4)" class="circular-img"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=5)" class="circular-img"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=6)" class="circular-img"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=7)" class="circular-img"></span>
+</div>
+
+<pre class="prettyprint lang-html">
+<!-- Default size -->
+<span class="circular-img" style="background-image: url(https://loremflickr.com/320/240)"></span>
+
+</pre>
+
+<br>
+
+<p>In case you want a smaller circular-img element, you may use the small version 
+adding the <code>small</code> class:</p>
+<div>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=1)" class="circular-img small"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=2)" class="circular-img small"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=3)" class="circular-img small"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=4)" class="circular-img small"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=5)" class="circular-img small"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=6)" class="circular-img small"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=7)" class="circular-img small"></span>
+</div>
+
+<pre class="prettyprint lang-html">
+<!-- Small size -->
+<span class="circular-img small" style="background-image: url(https://loremflickr.com/320/240)"></span>
+
+</pre>
+
+<br>
+
+<p>And for the extra large version, add the <code>x-large</code> class instead:</p>
+<div>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=1)" class="circular-img x-large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=2)" class="circular-img x-large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=3)" class="circular-img x-large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=4)" class="circular-img x-large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=5)" class="circular-img x-large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=6)" class="circular-img x-large"></span>
+    <span style="background-image: url(https://loremflickr.com/320/240?random=7)" class="circular-img x-large"></span>
+</div>
+
+<pre class="prettyprint lang-html">
+<!-- Extra large size -->
+<span class="circular-img x-large" style="background-image: url(https://loremflickr.com/320/240)"></span>
+
+</pre>
+
+<br>
+
+<p>Finally, a profile version is included too:</p>
+<div>
+        <span style="background-image: url(https://loremflickr.com/320/240?random=1)" class="circular-img profile"></span>
+        <span style="background-image: url(https://loremflickr.com/320/240?random=2)" class="circular-img profile"></span>
+        <span style="background-image: url(https://loremflickr.com/320/240?random=3)" class="circular-img profile"></span>
+        <span style="background-image: url(https://loremflickr.com/320/240?random=4)" class="circular-img profile"></span>
+        <span style="background-image: url(https://loremflickr.com/320/240?random=5)" class="circular-img profile"></span>
+        <span style="background-image: url(https://loremflickr.com/320/240?random=6)" class="circular-img profile"></span>
+        <span style="background-image: url(https://loremflickr.com/320/240?random=7)" class="circular-img profile"></span>
+</div>
+
+<pre class="prettyprint lang-html">
+<!-- Profile size -->
+<span class="circular-img profile" style="background-image: url(https://loremflickr.com/320/240)"></span>
+
+</pre>
+
+<br>
+
+<p>If you need another size, you still may define it through a CSS class, or with inline styles:</p>
+<div>
+    <span style="width: 168px; height: 168px; background-image: url(https://loremflickr.com/320/240?random=1)" class="circular-img"></span>
+</div>
+
+<pre class="prettyprint lang-html">
+<!-- Custom size -->
+<span class="circular-img" style="width: 168px; height: 168px; background-image: url(https://loremflickr.com/320/240)"></span>
+
+</pre>
+
+{% endblock %}
