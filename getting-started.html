@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Comment • A flexible social interface component</title>
-    <meta name="description" content="Comment: A flexible social interface component for displaying visual and text content">
+    <title>Coraline • HTML, CSS and JS frontend component library</title>
+    <meta name="description" content="An alternative, lightweight framework for HTML, CSS and JS. Coraline is responsive and mobile first designed.">
     <link rel="stylesheet" href="coraline-v0.5.1/coraline.min.css">
     <link rel="icon" href="logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel="stylesheet" href="prettifier2.css">
 
-    <link rel="canonical" href="https://coralinecss.com/comment.html">
+    <link rel="canonical" href="https://coralinecss.com/getting-started.html">
 
-    <meta property="og:url" content="https://coralinecss.com/comment.html">
+    <meta property="og:url" content="https://coralinecss.com/getting-started.html">
     <meta property="og:type" content="website">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="640">
     <meta property="og:image:height" content="320">
 
-    <meta property="og:title" content="Comment • A flexible social interface component">
-    <meta property="og:description" content="Comment: A flexible social interface component for displaying visual and text content">
+    <meta property="og:title" content="Coraline • HTML, CSS and JS frontend component library">
+    <meta property="og:description" content="An alternative, lightweight framework for HTML, CSS and JS. Coraline is responsive and mobile first designed.">
     <meta property="og:image" content="https://coralinecss.com/banner.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@isradeleon">
     <meta name="twitter:creator" content="@isradeleon">
 
-    <meta name="twitter:title" content="Comment • A flexible social interface component">
-    <meta name="twitter:description" content="Comment: A flexible social interface component for displaying visual and text content">
+    <meta name="twitter:title" content="Coraline • HTML, CSS and JS frontend component library">
+    <meta name="twitter:description" content="An alternative, lightweight framework for HTML, CSS and JS. Coraline is responsive and mobile first designed.">
     <meta name="twitter:image" content="https://coralinecss.com/banner.png">
 
     <style>
@@ -57,7 +57,7 @@
 
         <hr>
 
-        <a href="getting-started.html" class="link ">
+        <a href="getting-started.html" class="link text-brand">
             Getting started
         </a>
 
@@ -65,7 +65,7 @@
 
         <div class="children active">
             <a href="card.html" class="link text-size-s ">Card</a>
-            <a href="comment.html" class="link text-size-s text-brand">Comment</a>
+            <a href="comment.html" class="link text-size-s ">Comment</a>
             <a href="sidebar.html" class="link text-size-s ">Sidebar</a>
             <a href="navbar.html" class="link text-size-s ">Navbar</a>
             <a href="staggered.html" class="link text-size-s ">Staggered grid view</a>
@@ -115,68 +115,98 @@
         <div class="container below-navbar">
             <br>
             
-<!-- COMMENT -->
-<h1 id="comment" class="text-brand">Comment</h1>
-<div class="grid">
-    <div class="col-6">
-        <div class="comment">
-            <span class="circular-img"
-            style="background-image: url(https://picsum.photos/64/64)"></span>
-    
-            <div class="comment-data">
-                <p>Elizabeth </p>
-                <small>• 5 min ago</small>
-                
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod nobis praesentium tempore, molestiae quibusdam odit velit veniam!</span>
-                
-                <div class="user-actions end">
-                    <i style="font-size: 1.5rem;" class="far fa-star"></i>
-                    <i style="font-size: 1.5rem;" class="far fa-bookmark"></i>
-                </div>
-            </div>
-    
-        </div>
-    </div>
-    <div class="col-6">
-        <div class="comment">
-            <span class="circular-img"
-            style="background-image: url(https://picsum.photos/64/64)"></span>
-    
-            <div class="comment-data">
-                <p>Elizabeth</p>
-                
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum alias, numquam laborum possimus nemo iste minima veritatis quaerat explicabo laboriosam atque aspernatur.</span>
-                
-            </div>
-    
-        </div>
-    </div>
-</div>
+<!-- GETTING STARTED -->
+<h1 class="text-brand">Getting started</h1>
+<p>This is a free, open source front-end component library. Its main objective is 
+to be a fresh alternative to build high quality websites on the market.</p>
+
+<p>You may just install the framework from npm or <a href="https://github.com/isradeleon/coraline/releases/download/0.5.1/coralinecss.zip">download the current version</a>. 
+Then just import the minified CSS and JS files into your project. Here is the folder structure:</p>
+
+<strong>coralinecss</strong>
+<ul>
+    <li>
+        coraline-v0.5.1
+        <ul>
+            <li>coraline.min.css</li>
+            <li>coraline.min.js</li>
+        </ul>
+    </li>
+    <li>base.scss</li>
+    <li>base.css</li>
+    <li>base.js</li>
+    <li>README.md</li>
+    <li>LICENSE</li>
+</ul>
+
+<p>The <span class="text-brand">coraline-v0.5.1/coraline.min.css</span> and 
+<span class="text-brand">coraline-v0.5.1/coraline.min.js</span> files are production ready. 
+Import these files into you project and you're on the fly. Both files together are 
+<strong>19.3K</strong> size.</p>
 
 <br>
 
-<p>Just add the <code>comment</code> class to your html element. The comment component is composed of a <code>circular-img</code>, the 
-<code>comment-data</code> and it may contain some <code>user-actions</code> if you want.</p>
+<h2>NPM</h2>
+<p>Just do <code>npm install coralinecss</code> from your terminal. After installing, 
+you'll find the <span class="text-brand">coraline-v0.5.1</span> folder with the production 
+files. Outside this folder, you'll find the <span class="text-brand">base.scss</span>, 
+<span class="text-brand">base.css</span> and <span class="text-brand">base.js</span>
+development files.</p>
 
-<pre class="prettyprint lang-html">
-<div class="comment">
-    <span class="circular-img"
-    style="background-image: url(https://picsum.photos/64/64)"></span>
+<br>
 
-    <div class="comment-data">
-        <p>Elizabeth </p>
-        <small>• 5 min ago</small><!-- small tag for the time -->
-        
-        <span>
-            Comment text goes here...
-        </span>
-        
-        <div class="user-actions end">
-            <i style="font-size: 1.5rem;" class="far fa-star"></i>
-            <i style="font-size: 1.5rem;" class="far fa-bookmark"></i>
-        </div>
-    </div>
-</div>
+<h2>No dependencies</h2>
+<p>Coraline has no dependencies. The <a href="sidebar.html">sidebar</a> and 
+<a href="staggered.html">staggered grid</a> functionality are written in pure javascript. 
+If you don't need to use these components, you may just import the 
+<span class="text-brand">coraline-v0.5.1/coraline.min.css</span>, which is 
+just <strong>17K</strong> size.</p>
+
+<br>
+
+<h2>Customization</h2>
+<p>The <span class="text-brand">base.scss</span> may be imported if you want to customize 
+Coraline colors using Sass. This is the list of colors:</p>
+
+<ul>
+    <li><span class="text-brand">Brand</span></li>
+    <li><span class="text-primary">Primary</span></li>
+    <li><span class="text-secondary">Secondary</span></li>
+    <li><span class="text-info">Info</span></li>
+    <li><span class="text-warning">Warning</span></li>
+    <li><span class="text-success">Success</span></li>
+    <li><span class="text-danger">Danger</span></li>
+</ul>
+
+<pre class="prettyprint lang-sass">
+// Set your brand color
+$brand: #ff7675;
+
+// Set the contrast color,
+// the default value is white
+$contrast-brand: black;
+
+// Define the rest of the colors
+$primary: #6c5ce7;
+$secondary: #0984e3;
+
+$info: #74b9ff;
+$contrast-info: black;
+
+$success: #1dd1a1;
+$danger: #ee5253;
+
+$warning: #f7b731;
+$contrast-warning: black;
+
+$black: #2d3436;
+
+// Set the font family
+$font-family: Helvetica;
+$font-weight: 400;
+
+// Import Coraline scss file
+@import "base.scss";
 </pre>
 
         </div>
