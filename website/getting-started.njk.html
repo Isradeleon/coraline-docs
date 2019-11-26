@@ -3,22 +3,21 @@
 {% block content %}
 <!-- GETTING STARTED -->
 <h1 class="text-brand">Getting started</h1>
-<p>This is a free, open source front-end component library. Its main objective is 
+<p>This is and open source CSS only framework. Its main objective is 
 to be a fresh alternative to build high quality websites on the market.</p>
 
 <h2>Quick start</h2>
 <p>You may use the CDN for a quick start:</p>
 
-<ul style="width: 100%; overflow-y: auto;">
+<ul style="width: 100%; overflow-x: auto;">
     <li class="text-brand">https://cdn.statically.io/gh/isradeleon/coraline/0.5.3/coraline-v0.5.3/coraline.min.css</li>
-    <li class="text-brand">https://cdn.statically.io/gh/isradeleon/coraline/0.5.3/coraline-v0.5.3/coraline.min.js</li>
 </ul>
 
 <br>
 
 <h2>Easy installation</h2>
 <p>You may install the framework from npm or <a href="https://github.com/isradeleon/coraline/releases/download/0.5.3/coralinecss.zip">download the current version here</a>. 
-Then just import the minified CSS and JS files into your project. Here is the folder structure:</p>
+Then just import the minified CSS file into your project. Here is the folder structure:</p>
 
 <strong>coralinecss</strong>
 <ul>
@@ -26,44 +25,37 @@ Then just import the minified CSS and JS files into your project. Here is the fo
         coraline-v0.5.3
         <ul>
             <li>coraline.min.css</li>
-            <li>coraline.min.js</li>
         </ul>
     </li>
     <li>base.scss</li>
     <li>base.css</li>
-    <li>base.js</li>
     <li>README.md</li>
     <li>LICENSE</li>
 </ul>
 
-<p>The <span class="text-brand">coraline-v0.5.3/coraline.min.css</span> and 
-<span class="text-brand">coraline-v0.5.3/coraline.min.js</span> files are production ready. 
-Import these files into you project and you're on the fly. Both files together are 
-<strong>19.3K</strong> size.</p>
+<p>The <span class="text-brand">coraline-v0.5.3/coraline.min.css</span> file is production ready.</p>
 
 <br>
 
 <h2>NPM</h2>
 <p>Just do <code>npm install coralinecss</code> from your terminal. After installing, 
 you'll find the <span class="text-brand">coraline-v0.5.3</span> folder with the production 
-files. Outside this folder, you'll find the <span class="text-brand">base.scss</span>, 
-<span class="text-brand">base.css</span> and <span class="text-brand">base.js</span>
-development files.</p>
+minified file. Outside this folder, you'll find the <span class="text-brand">base.scss</span> 
+and <span class="text-brand">base.css</span> development files.</p>
 
 <br>
 
 <h2>No dependencies</h2>
-<p>Coraline has no dependencies. The <a href="sidebar.html">sidebar</a> and 
-<a href="staggered.html">staggered grid</a> functionality are written in pure javascript. 
-If you don't need to use these components, you may just import the 
-<span class="text-brand">coraline-v0.5.3/coraline.min.css</span>, which is 
-just <strong>17K</strong> size.</p>
+<p>
+    Coraline has no dependencies and no Javascript code. Use Coraline with your favorite 
+    Javascript framework.
+</p>
 
 <br>
 
 <h2>Customization</h2>
-<p>The <span class="text-brand">base.scss</span> may be imported if you want to customize 
-Coraline colors using Sass. This is the list of colors:</p>
+<p>The <span class="text-brand">base.scss</span> can be used if you want to customize 
+Coraline colors with the Sass variables. This is the list of predefined colors:</p>
 
 <ul>
     <li class="text-brand">Brand</li>
@@ -74,6 +66,10 @@ Coraline colors using Sass. This is the list of colors:</p>
     <li class="text-success">Success</li>
     <li class="text-danger">Danger</li>
 </ul>
+
+<br>
+
+<p>And to customize them:</p>
 
 <pre class="prettyprint lang-sass">
 // Set your brand color
