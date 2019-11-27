@@ -400,6 +400,55 @@ with the <b>Link 4</b>:</p>
 
 <br>
 
+<p>
+You can put the burger button at the end of the navbar, just move it and add the 
+<code>to-end</code> class to the <code>burger-btn</code> like this:
+
+<div style="position: relative;">
+    <nav class="navbar">
+
+        <a class="link text-brand" href="/">Your brand</a>
+    
+        <input class="menu-toggle" type="checkbox" id="menu-toggler6" />
+        <label class="burger-btn to-end" for="menu-toggler6">
+            <span class="burger-icon"></span>
+        </label>
+    
+        <div class="navbar-content">
+            <a class="link" href="#">Link 1</a>
+            <a class="link" href="#">Link 2</a>
+            <a class="link" href="#">Link 3</a>
+            <a class="link" href="#">Link 4</a>
+        </div>
+    
+    </nav>
+</div>
+
+<pre class="prettyprint lang-html">
+<nav class="navbar">
+
+    <a class="link text-brand" href="/">Your brand</a>
+
+    <!-- This burger button will stay at the end -->
+    <input class="menu-toggle" type="checkbox" id="menu6" />
+    <label class="burger-btn to-end" for="menu6">
+        <span class="burger-icon"></span>
+    </label>
+
+    <div class="navbar-content">
+        <a class="link" href="#">Link 1</a>
+        <a class="link" href="#">Link 2</a>
+        <a class="link" href="#">Link 3</a>
+        <a class="link" href="#">Link 4</a>
+    </div>
+
+</nav>
+</pre>
+
+</p>
+
+<br>
+
 <p>Finally, if you want the navbar to be fixed at the top, you'll just need to 
 add the <code>fixed</code> class:</p>
 <pre class="prettyprint lang-html">
